@@ -22,6 +22,7 @@ Handlebars.registerHelper('markdown', function(str, locals, options) {
 
 	var markup = marked(val);
 
+
 	// If we end up with a string wrapped in one <p> block, remove it so we don't create a new text block
 	var startEndMatch = markup.match(/^<p>(.*)<\/p>\n$/);
 	return startEndMatch && startEndMatch[1].indexOf("<p>") === -1 ?
