@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!--- basic page needs
@@ -8,60 +9,28 @@
     <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="generator" content="https://www.npmjs.com/package/{{meta.packageName}}/v/{{meta.version}}"/>
+    <meta name="generator" content="https://www.npmjs.com/package/{{meta.packageName}}/v/{{meta.version}}" />
 
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- script
-    ================================================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lora|Poppins:400,600,700&display=swap" rel="stylesheet">
-
     <!-- CSS
   ================================================== -->
     <style>
-            {{{css}}}
-    </style>
+        {{{css}}}
 
-    <!-- favicons
-     ================================================== -->
-    <link rel="icon" type="image/png" href="favicon.png">
+
+        #intro {
+            background-image:  url({{{resume.meta.additionalSiteData.introBackground}}});
+        }
+    </style>
 
 </head>
 
 <body id="top">
 
-<!--&lt;!&ndash; header-->
-<!--================================================== &ndash;&gt;-->
-<!--<header>-->
-<!--    <div class="row">-->
-
-<!--        <div class="top-bar">-->
-<!--            <a data-test="menu-toggle" class="menu-toggle" href="#"><span>Menu</span></a>-->
-
-<!--            <div class="logo">-->
-<!--                <a href="/">Resume</a>-->
-<!--            </div>-->
-
-<!--            <nav id="main-nav-wrap">-->
-<!--                <ul class="main-navigation">-->
-<!--                    <li class="current"><a data-test="intro-link" class="smoothscroll" href="#intro" title="">Home</a>-->
-<!--                    </li>-->
-<!--                    <li><a data-test="about-link" class="smoothscroll" href="#about" title="">About</a></li>-->
-<!--                    <li><a data-test="resume-link" class="smoothscroll" href="#resume" title="">Resume</a></li>-->
-<!--                    &lt;!&ndash;<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>&ndash;&gt;-->
-<!--                    &lt;!&ndash;<li><a class="smoothscroll"  href="#services" title="">Services</a></li>&ndash;&gt;-->
-<!--                    &lt;!&ndash;<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>&ndash;&gt;-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--        </div> &lt;!&ndash; /top-bar &ndash;&gt;-->
-
-<!--    </div> &lt;!&ndash; /row &ndash;&gt;-->
-<!--</header> &lt;!&ndash; /header &ndash;&gt;-->
-
-{{#resume.basics}}
+    {{#resume.basics}}
     <!-- intro section
   ================================================== -->
     <section id="intro">
@@ -80,7 +49,8 @@
                         <span>{{label}}</span>
                     </p>
 
-                    <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+                    <a class="button stroke smoothscroll " href="#about" title="">More About Me <i
+                            class="fas fa-chevron-down"></i></a>
 
                 </div>
 
@@ -89,21 +59,21 @@
 
         <ul class="intro-social">
             {{#each profiles}}
-                <li><a href="{{url}}" target="_blank" rel="noopener"><i class="fa fa-{{toLowerCase network}}"></i></a>
-                </li>
+            <li><a href="{{url}}" target="_blank" rel="noopener"><i class="fab fa-{{toLowerCase network}}"></i></a>
+            </li>
             {{/each}}
         </ul> <!-- /intro-social -->
 
     </section> <!-- /intro -->
-{{/resume.basics}}
+    {{/resume.basics}}
 
 
 
-<!-- about section
+    <!-- about section
 ================================================== -->
-<section id="about" class="white-section">
+    <section id="about" class="white-section">
 
-    {{#resume.basics}}
+        {{#resume.basics}}
         <div class="row section-intro">
             <div class="col-twelve">
 
@@ -119,95 +89,95 @@
 
             </div>
         </div> <!-- /section-intro -->
-    {{/resume.basics}}
+        {{/resume.basics}}
 
-    <div class="row about-content">
+        <div class="row about-content">
 
-        <div class="col-six tab-full">
+            <div class="col-six tab-full">
 
-            <h3>Profile</h3>
-            <!--<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>-->
+                <h3>Profile</h3>
+                <!--<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>-->
 
-            {{#resume.basics}}
+                {{#resume.basics}}
                 <ul class="info-list">
                     <li>
                         <strong>Fullname:</strong>
                         <span>{{name}}</span>
                     </li>
                     {{#if label}}
-                        <li>
-                            <strong>Job:</strong>
-                            <span>{{label}}</span>
-                        </li>
+                    <li>
+                        <strong>Job:</strong>
+                        <span>{{label}}</span>
+                    </li>
                     {{/if}}
                     {{#if url}}
-                        <li>
-                            <strong>Website:</strong>
-                            <a href="{{url}}" target="_blank" rel="noopener"><span>{{displayUrl url}}</span></a>
-                        </li>
+                    <li>
+                        <strong>Website:</strong>
+                        <a href="{{url}}" target="_blank" rel="noopener"><span>{{displayUrl url}}</span></a>
+                    </li>
                     {{/if}}
                     {{#if email}}
-                        <li>
-                            <strong>Email:</strong>
-                            <span>{{email}}</span>
-                        </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <span>{{email}}</span>
+                    </li>
                     {{/if}}
                     {{#if phone}}
-                        <li>
-                            <strong>Phone:</strong>
-                            <span>{{phone}}</span>
-                        </li>
+                    <li>
+                        <strong>Phone:</strong>
+                        <span>{{phone}}</span>
+                    </li>
                     {{/if}}
 
                 </ul> <!-- /info-list -->
-            {{/resume.basics}}
-        </div>
+                {{/resume.basics}}
+            </div>
 
-        <div class="col-six tab-full">
-            {{#if resume.skills}}
+            <div class="col-six tab-full">
+                {{#if resume.skills}}
 
                 <h3>Skills</h3>
                 <!--<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>-->
 
                 <ul class="skill-bars">
                     {{#each resume.skills}}
-                        <li>
-                            <div class="progress percent{{skillLevel level}}"><span>{{skillLevel level}}%</span></div>
-                            <strong>{{name}}</strong>
-                        </li>
+                    <li>
+                        <div class="progress percent{{skillLevel level}}"><span>{{skillLevel level}}%</span></div>
+                        <strong>{{name}}</strong>
+                    </li>
                     {{/each}}
 
                 </ul> <!-- /skill-bars -->
-            {{/if}}
+                {{/if}}
+            </div>
         </div>
-    </div>
 
-    <div class="row button-section">
-        <div class="col-twelve">
-            <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
-            <a href="./resume.pdf" title="Download CV" class="button button-primary">Download CV</a>
+        <div class="row button-section">
+            <div class="col-twelve">
+                <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+                <a href="./resume.pdf" title="Download CV" class="button button-primary">Download CV</a>
+            </div>
         </div>
-    </div>
 
-</section> <!-- /process-->
+    </section> <!-- /process-->
 
 
-<!-- resume Section
+    <!-- resume Section
 ================================================== -->
-<section id="resume" class="grey-section">
+    <section id="resume" class="grey-section">
 
-    <div class="row section-intro">
-        <div class="col-twelve">
+        <div class="row section-intro">
+            <div class="col-twelve">
 
-            <h5>Resume</h5>
-            <h1>More of my credentials.</h1>
+                <h5>Resume</h5>
+                <h1>More of my credentials.</h1>
 
-            <!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>-->
+                <!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>-->
 
-        </div>
-    </div> <!-- /section-intro-->
+            </div>
+        </div> <!-- /section-intro-->
 
-    {{#if resume.work}}
+        {{#if resume.work}}
         <div class="row resume-timeline">
 
 
@@ -222,32 +192,32 @@
                 <div class="timeline-wrap">
 
                     {{#each resume.work}}
-                        <div class="timeline-block">
+                    <div class="timeline-block">
 
-                            <div class="timeline-ico">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
+                        <div class="timeline-ico">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
 
-                            <div class="timeline-header">
-                                <h3>{{position}}</h3>
-                                <p>{{date startDate}} - {{date endDate}}</p>
-                            </div>
+                        <div class="timeline-header">
+                            <h3>{{position}}</h3>
+                            <p>{{date startDate}} - {{date endDate}}</p>
+                        </div>
 
-                            <div class="timeline-content">
-                                <h4>{{name}}</h4>
-                                <p>{{#markdown}}{{summary}}{{/markdown}}</p>
+                        <div class="timeline-content">
+                            <h4><a href="{{url}}" target="_blank" rel="noopener">{{name}}</a></h4>
+                            <p>{{#markdown}}{{summary}}{{/markdown}}</p>
 
-                                {{#if highlights}}
-                                    <span><strong>Main tasks:</strong></span>
-                                    <ul>
-                                        {{#each highlights}}
-                                            <li>{{this}}</li>
-                                        {{/each}}
-                                    </ul>
-                                {{/if}}
-                            </div>
+                            {{#if highlights}}
+                            <span><strong>Main tasks:</strong></span>
+                            <ul>
+                                {{#each highlights}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </div>
 
-                        </div> <!-- /timeline-block -->
+                    </div> <!-- /timeline-block -->
                     {{/each}}
 
                 </div> <!-- /timeline-wrap -->
@@ -255,9 +225,9 @@
             </div> <!-- /col-twelve -->
 
         </div> <!-- /resume-timeline -->
-    {{/if}}
+        {{/if}}
 
-    {{#if resume.volunteer}}
+        {{#if resume.volunteer}}
         <div class="row resume-timeline">
 
 
@@ -272,23 +242,23 @@
                 <div class="timeline-wrap">
 
                     {{#each resume.volunteer}}
-                        <div class="timeline-block">
+                    <div class="timeline-block">
 
-                            <div class="timeline-ico">
-                                <i class="fa fa-handshake-o"></i>
-                            </div>
+                        <div class="timeline-ico">
+                            <i class="fas fa-handshake"></i>
+                        </div>
 
-                            <div class="timeline-header">
-                                <h3>{{position}}</h3>
-                                <p>{{date startDate}} - {{date endDate}}</p>
-                            </div>
+                        <div class="timeline-header">
+                            <h3>{{position}}</h3>
+                            <p>{{date startDate}} - {{date endDate}}</p>
+                        </div>
 
-                            <div class="timeline-content">
-                                <h4>{{organization}}</h4>
-                                <p>{{#markdown}}{{summary}}{{/markdown}}</p>
-                            </div>
+                        <div class="timeline-content">
+                            <h4>{{organization}}</h4>
+                            <p>{{#markdown}}{{summary}}{{/markdown}}</p>
+                        </div>
 
-                        </div> <!-- /timeline-block -->
+                    </div> <!-- /timeline-block -->
                     {{/each}}
 
                 </div> <!-- /timeline-wrap -->
@@ -296,9 +266,9 @@
             </div> <!-- /col-twelve -->
 
         </div> <!-- /resume-timeline -->
-    {{/if}}
+        {{/if}}
 
-    {{#if resume.publications}}
+        {{#if resume.publications}}
         <div class="row resume-timeline">
 
 
@@ -313,23 +283,23 @@
                 <div class="timeline-wrap">
 
                     {{#each resume.publications}}
-                        <div class="timeline-block">
+                    <div class="timeline-block">
 
-                            <div class="timeline-ico">
-                                <i class="fa fa-book"></i>
-                            </div>
+                        <div class="timeline-ico">
+                            <i class="fas fa-book"></i>
+                        </div>
 
-                            <div class="timeline-header">
-                                <h3>{{name}}</h3>
-                                <p>{{date releaseDate}}</p>
-                            </div>
+                        <div class="timeline-header">
+                            <h3>{{name}}</h3>
+                            <p>{{date releaseDate}}</p>
+                        </div>
 
-                            <div class="timeline-content">
-                                <h4>{{publisher}}</h4>
-                                <p>{{#markdown}}{{summary}}{{/markdown}}</p>
-                            </div>
+                        <div class="timeline-content">
+                            <h4>{{publisher}}</h4>
+                            <p>{{#markdown}}{{summary}}{{/markdown}}</p>
+                        </div>
 
-                        </div> <!-- /timeline-block -->
+                    </div> <!-- /timeline-block -->
                     {{/each}}
 
                 </div> <!-- /timeline-wrap -->
@@ -337,9 +307,9 @@
             </div> <!-- /col-twelve -->
 
         </div> <!-- /resume-timeline -->
-    {{/if}}
+        {{/if}}
 
-    {{#if resume.education}}
+        {{#if resume.education}}
         <div class="row resume-timeline">
 
             <div class="col-twelve resume-header">
@@ -353,23 +323,23 @@
                 <div class="timeline-wrap">
 
                     {{#each resume.education}}
-                        <div class="timeline-block">
+                    <div class="timeline-block">
 
-                            <div class="timeline-ico">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
+                        <div class="timeline-ico">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
 
-                            <div class="timeline-header">
-                                <h3>{{studyType}} Degree</h3>
-                                <p>{{date startDate}} - {{date endDate}}</p>
-                            </div>
+                        <div class="timeline-header">
+                            <h3>{{studyType}} Degree</h3>
+                            <p>{{date startDate}} - {{date endDate}}</p>
+                        </div>
 
-                            <div class="timeline-content">
-                                <h4>{{institution}}</h4>
-                                <p>{{area}}</p>
-                            </div>
+                        <div class="timeline-content">
+                            <h4>{{institution}}</h4>
+                            <p>{{area}}</p>
+                        </div>
 
-                        </div> <!-- /timeline-block -->
+                    </div> <!-- /timeline-block -->
                     {{/each}}
 
                 </div> <!-- /timeline-wrap -->
@@ -377,12 +347,12 @@
             </div> <!-- /col-twelve -->
 
         </div> <!-- /resume-timeline -->
-    {{/if}}
+        {{/if}}
 
 
-</section> <!-- /features -->
+    </section> <!-- /features -->
 
-{{#if resume.interests}}
+    {{#if resume.interests}}
     <!-- Interests Section
     ================================================== -->
     <section id="cta" class="white-section">
@@ -398,10 +368,10 @@
 
                 <p>
                     <strong>Especially interested in:</strong>
-                    <br/>
+                    <br />
                     <span>
                         {{#each resume.interests}}
-                            {{name}}{{#unless @last}}, {{/unless}}
+                        {{name}}{{#unless @last}}, {{/unless}}
                         {{/each}}
                     </span>
                 </p>
@@ -409,204 +379,208 @@
 
         </div> <!-- /cta-content -->
     </section>
-{{/if}}
+    {{/if}}
 
 
-<!-- stats Section
+    <!-- stats Section
 ================================================== -->
-<section id="stats" class="count-up">
+    <section id="stats" class="count-up">
 
-    <div class="row">
-        <div class="col-twelve">
+        <div class="row">
+            <div class="col-twelve">
 
-            <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+                <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
-                <div class="bgrid stat">
+                    <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-pencil-ruler"></i>
-                    </div>
+                        <div class="icon-part">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
 
-                    <h3 class="stat-count">
-                        +1
-                    </h3>
+                        <h3 class="stat-count">
+                            {{resume.meta.additionalSiteData.projectCompleted}}
+                        </h3>
 
-                    <h5 class="stat-title">
-                        Projects Completed
-                    </h5>
+                        <h5 class="stat-title">
+                            Projects Completed
+                        </h5>
 
-                </div> <!-- /stat -->
+                    </div> <!-- /stat -->
 
-                <div class="bgrid stat">
+                    <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-users"></i>
-                    </div>
+                        <div class="icon-part">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
 
-                    <h3 class="stat-count">
-                        +{{resume.work.length}}
-                    </h3>
+                        <h3 class="stat-count">
+                            +{{resume.work.length}}
+                        </h3>
 
-                    <h5 class="stat-title">
-                        Happy Bosses
-                    </h5>
+                        <h5 class="stat-title">
+                            Happy Bosses
+                        </h5>
 
-                </div> <!-- /stat -->
+                    </div> <!-- /stat -->
 
-                <div class="bgrid stat">
+                    <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-badge"></i>
-                    </div>
+                        <div class="icon-part">
+                            <i class="fas fa-award"></i>
+                        </div>
 
-                    <h3 class="stat-count">
-                        {{#if resume.awards.length}}
+                        <h3 class="stat-count">
+                            {{#if resume.awards.length}}
                             {{resume.awards.length}}
-                        {{else}}
+                            {{else}}
                             no
-                        {{/if}}
-                    </h3>
+                            {{/if}}
+                        </h3>
 
-                    <h5 class="stat-title">
-                        Awards Received
-                    </h5>
+                        <h5 class="stat-title">
+                            Awards Received
+                        </h5>
 
-                </div> <!-- /stat -->
+                    </div> <!-- /stat -->
 
-                <div class="bgrid stat">
+                    <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-light-bulb"></i>
-                    </div>
+                        <div class="icon-part">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
 
-                    <h3 class="stat-count">
-                        some
-                    </h3>
+                        <h3 class="stat-count">
+                            some
+                        </h3>
 
-                    <h5 class="stat-title">
-                        Crazy Ideas
-                    </h5>
+                        <h5 class="stat-title">
+                            Crazy Ideas
+                        </h5>
 
-                </div> <!-- /stat -->
+                    </div> <!-- /stat -->
 
-                <div class="bgrid stat">
+                    <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-cup"></i>
-                    </div>
+                        <div class="icon-part">
+                            <i class="fas fa-coffee"></i>
+                        </div>
 
-                    <h3 class="stat-count">
-                        a lot
-                    </h3>
+                        <h3 class="stat-count">
+                            a lot
+                        </h3>
 
-                    <h5 class="stat-title">
-                        Coffee Cups
-                    </h5>
+                        <h5 class="stat-title">
+                            Coffee Cups
+                        </h5>
 
-                </div> <!-- /stat -->
+                    </div> <!-- /stat -->
 
-                <div class="bgrid stat">
+                    {{#if resume.meta.additionalSiteData.runningTotalKm}}
+                        <div class="bgrid stat">
 
-                    <div class="icon-part">
-                        <i class="icon-clock"></i>
-                    </div>
+                            <div class="icon-part">
+                                <i class="fas fa-running"></i>
+                            </div>
 
-                    <h3 class="stat-count">
-                        855 km
-                    </h3>
+                            <h3 class="stat-count">
+                                {{resume.meta.additionalSiteData.runningTotalKm}}
+                            </h3>
 
-                    <h5 class="stat-title">
-                        ran in 2019
-                    </h5>
+                            <h5 class="stat-title">
+                                ran in {{resume.meta.additionalSiteData.runningYear}}
+                            </h5>
+                        </div> <!-- /stat -->
+                    {{/if}}
 
-                </div> <!-- /stat -->
+                </div> <!-- /stats-list -->
 
-            </div> <!-- /stats-list -->
+            </div> <!-- /twelve -->
+        </div> <!-- /row -->
 
-        </div> <!-- /twelve -->
-    </div> <!-- /row -->
-
-</section> <!-- /stats -->
+    </section> <!-- /stats -->
 
 
-<!-- contact
+    <!-- contact
 ================================================== -->
-<section id="contact">
+    <section id="contact">
 
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Contact</h5>
-            <h1>I'd Love To Hear From You.</h1>
-        </div>
-    </div> <!-- /section-intro -->
+        <div class="row section-intro">
+            <div class="col-twelve">
+                <h5>Contact</h5>
+                <h1>I'd love to hear from you.</h1>
+            </div>
+        </div> <!-- /section-intro -->
 
-    <div class="row contact-info">
+        <div class="row contact-info">
 
-        <div class="col-four tab-full">
+            <div class="col-four tab-full">
 
-            <div class="icon">
-                <i class="icon-pin"></i>
+                <div class="icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+
+                <h5>Where to find me</h5>
+
+                <p>
+                    {{resume.basics.location.postalCode}} {{resume.basics.location.city}}
+                    <br />
+                    {{resume.basics.location.region}}
+                </p>
+
             </div>
 
-            <h5>Where to find me</h5>
+            <div class="col-four tab-full collapse">
 
-            <p>
-                {{resume.basics.location.postalCode}} {{resume.basics.location.city}}
-                <br />
-                {{resume.basics.location.region}}
-            </p>
+                <div class="icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
 
-        </div>
+                <h5>Email Me At</h5>
 
-        <div class="col-four tab-full collapse">
+                <p>{{resume.basics.email}}</p>
 
-            <div class="icon">
-                <i class="icon-mail"></i>
             </div>
 
-            <h5>Email Me At</h5>
+            <div class="col-four tab-full">
 
-            <p>{{resume.basics.email}}</p>
+                <div class="icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
 
-        </div>
+                <h5>Call Me At</h5>
 
-        <div class="col-four tab-full">
+                <p>Mobile: {{resume.basics.phone}}</p>
 
-            <div class="icon">
-                <i class="icon-phone"></i>
             </div>
 
-            <h5>Call Me At</h5>
+        </div> <!-- /contact-info -->
 
-            <p>Mobile: {{resume.basics.phone}}</p>
-
-        </div>
-
-    </div> <!-- /contact-info -->
-
-</section> <!-- /contact -->
+    </section> <!-- /contact -->
 
 
-<!-- footer
+    <!-- footer
 ================================================== -->
 
-<div id="go-top">
-    <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-</div>
+    <div id="go-top" class="m-fadeOut">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
 
-<div id="preloader">
-    <div id="loader"></div>
-</div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-<!-- Java Script
+    <!-- Fonts
 ================================================== -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Java Script
+================================================== -->
+    <script type="text/javascript">
         {{{pluginsJs}}}
-</script>
-<script type="text/javascript">
+    </script>
+    <script type="text/javascript">
         {{{mainJs}}}
-</script>
+    </script>
 
 </body>
 

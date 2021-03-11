@@ -1,29 +1,32 @@
 {
-  "name": "jsonresume-theme-thomas",
-  "version": "1.0.2",
+  "name": "jsonresume-theme-kards-alt",
+  "version": "1.0.0",
   "description": "Theme for JSON Resume based on Kards design by styleshout",
-  "author": "XuluWarrior",
+  "author": "TimmersThomas",
   "repository": {
     "type": "git",
-    "url": "https://github.com/XuluWarrior/jsonresume-theme-kards.git"
+    "url": "https://github.com/TimmersThomas/jsonresume-theme-kards.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XuluWarrior/jsonresume-theme-kards/issues"
+    "url": "https://github.com/TimmersThomas/jsonresume-theme-kards/issues"
   },
-  "homepage": "https://github.com/XuluWarrior/jsonresume-theme-kards",
+  "homepage": "https://github.com/TimmersThomas/jsonresume-theme-kards",
   "scripts": {
-    "build:styles": "lessc Kards10/less/styles.less Kards10/css/styles.css",
+    "resume:serve": "resume serve --theme .",
     "release:prepare": "git checkout master && git pull && npm version patch -m \"Release: %s\""
   },
   "dependencies": {
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "handlebars-utils": "^1.0.6",
-    "marked": "^0.8.0",
-    "moment": "^2.24.0"
+    "html-minifier": "^4.0.0",
+    "marked": "^2.0.1",
+    "moment": "^2.29.1",
+    "purify-css": "^1.2.5",
+    "resume-cli": "3.0.0"
   },
   "devDependencies": {
-    "less": "^3.9.0"
+    "less": "^4.1.1"
   },
   "engineStrict": true,
   "engines": {

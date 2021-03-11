@@ -1,4 +1,4 @@
-# JSON Resume Kards Theme 
+# JSON Resume Kards Theme
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/XuluWarrior/jsonresume-theme-kards)
 
 This is a theme for [JSON Resume](http://jsonresume.org/) based on [Kards design](https://www.styleshout.com/free-templates/kards/) by [styleshout](https://www.styleshout.com/).
@@ -35,8 +35,8 @@ The resume should open in a new tab in your default browser
 ## Editing template
 ### Get source from GitHub
 ```
-git clone https://github.com/XuluWarrior/jsonresume-theme-kards.git
-cd jsonresume-theme-orbit
+git clone https://github.com/TimmersThomas/jsonresume-theme-kards.git
+cd jsonresume-theme-kards
 ```
 
 ### Serve theme
@@ -71,9 +71,28 @@ To include them in your template, edit **resume.hbs** and uncomment the appropri
 
  ...
 
-<!--</section> &lt;!&ndash; /portfolio &ndash;&gt;-->  
+<!--</section> &lt;!&ndash; /portfolio &ndash;&gt;-->
 ```
- 
+
+### Extra meta information inside resume.json
+
+For having some extra stuff on our resume website. :)
+An example off all possible options, note that everything is optional:
+
+```
+{
+  "meta": {
+    "additionalSiteData": {
+      "projectCompleted": "+1",
+      "introBackground": "/assets/hero_bg.svg",
+      "runningTotalKm": "666 km",
+      "runningYear": "2021"
+    }
+  }
+}
+```
+
+
 |  |  |
 | --- | --- |
 | [![Portfolio section](https://xuluwarrior.github.io/jsonresume-theme-kards/resume-portfolio.png)](https://www.styleshout.com/templates/preview/Kards10/#portfolio) | [![Services section](https://xuluwarrior.github.io/jsonresume-theme-kards/resume-services.png)](https://www.styleshout.com/templates/preview/Kards10/index.html#services) |

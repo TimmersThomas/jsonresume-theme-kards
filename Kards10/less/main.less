@@ -1,5 +1,5 @@
 /**
- * =================================================================== 
+ * ===================================================================
  *
  *  Kards v1.0 Main Stylesheet
  *  url: styleshout.com
@@ -11,7 +11,7 @@
  *  03. typography & general theme styles
  *  04. preloader
  *  05. forms
- *  06. buttons 
+ *  06. buttons
  *  07. other components
  *  08. common styles
  *  09. header styles
@@ -25,25 +25,24 @@
  *  17. contact
  *  18. footer
  *
- * =================================================================== 
+ * ===================================================================
  */
 
 
-/** 
+/**
  * ===================================================================
  * 01. webfonts and iconfonts - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @import "fonts.less";
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import "micons/micons.less";
+// @import "micons/micons.less";
 
 /**
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 html {
 	font-size: 10px;
@@ -70,7 +69,7 @@ html, body {
 }
 body {
 	background: #151515;
-	font-family: 'Lora', serif;
+	font-family: serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
@@ -93,14 +92,14 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
-/** 
+/**
  * ===================================================================
  * 03. typography & general theme styles - (_document-setup.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 600;
 	color: #313131;
 	font-style: normal;
@@ -153,7 +152,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: 'Lora', serif;
+	font-family: serif;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -163,7 +162,7 @@ p.lead {
 		font-size: 1.7rem;
 	}
 }
-em, i, strong, b {
+em, strong, b {
 	font-size: 1.7rem;
 	line-height: 3rem;
 }
@@ -208,7 +207,7 @@ blockquote cite a, blockquote cite a:visited {
 	border: none;
 }
 abbr {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-variant: small-caps;
 	text-transform: lowercase;
@@ -261,7 +260,7 @@ hr {
 }
 
 /**
- * Lists - (_document-setup.scss)  
+ * Lists - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 ol {
@@ -309,7 +308,7 @@ dd {
 }
 
 /**
- * tables - (_document-setup.scss)  
+ * tables - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 table {
@@ -325,7 +324,7 @@ th, td {
 }
 th {
 	color: #313131;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 }
 td {
@@ -343,7 +342,7 @@ th:last-child, td:last-child {
 }
 
 /**
- * Spacing - (_document-setup.scss)  
+ * Spacing - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 button, .button {
@@ -370,7 +369,7 @@ form,
 }
 
 /**
- * floated image - (_document-setup.scss)  
+ * floated image - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 img.pull-right {
@@ -381,7 +380,7 @@ img.pull-left {
 }
 
 /**
- * block grid paddings - (_document-setup.scss) 
+ * block grid paddings - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
 .bgrid {
@@ -432,11 +431,11 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
+/**
  * ===================================================================
  * 04. preloader - (_preloader-1.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #preloader {
 	position: fixed;
@@ -495,11 +494,11 @@ img.pull-left {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 05. forms - (_forms.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 fieldset {
 	border: none;
@@ -520,7 +519,7 @@ select {
 	outline: none;
 	vertical-align: middle;
 	color: #313131;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 3rem;
@@ -593,7 +592,7 @@ select:focus {
 	border-bottom: 1px solid #FF0077;
 }
 label, legend {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.4rem;
 	margin-bottom: .6rem;
@@ -606,7 +605,7 @@ input[type="checkbox"], input[type="radio"] {
 label > .label-text {
 	display: inline-block;
 	margin-left: 1rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	line-height: inherit;
 }
@@ -617,7 +616,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 /**
- * Style Placeholder Text  
+ * Style Placeholder Text
  * -
  */
 ::-webkit-input-placeholder {
@@ -636,11 +635,11 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
+/**
  * ===================================================================
  * 06. buttons - (_button-essentials.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .button,
 a.button,
@@ -649,7 +648,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.4rem;
 	text-transform: uppercase;
@@ -743,11 +742,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 07. other components - (_others.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 /**
@@ -759,7 +758,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 	margin-bottom: 3rem;
 	border-radius: 3px;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.5rem;
 }
@@ -792,14 +791,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 
 /**
- * drop cap 
+ * drop cap
  */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
 	padding: 1.5rem .6rem 0 0;
 	font-size: 8.4rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	line-height: 6rem;
 	text-indent: 0;
@@ -848,7 +847,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -859,7 +858,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *		</blockquote>
  *	</aside>
  *
- * --------------------------------------------------------------------- 
+ * ---------------------------------------------------------------------
  */
 .pull-quote {
 	position: relative;
@@ -889,7 +888,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -920,7 +919,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
 	display: inline-block;
 	font-size: 2.5rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	border: none;
 	color: #252525;
@@ -932,7 +931,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	display: block;
 	margin: .6rem 0 0 0;
 	font-size: 1.4rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	color: #888888;
 }
@@ -957,7 +956,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	left: 0;
 	top: -3rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	color: #313131;
 	text-transform: uppercase;
@@ -975,7 +974,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	right: 0;
 	top: -3.6rem;
 	display: block;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	color: white;
 	font-size: 1.1rem;
@@ -1017,11 +1016,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
+/**
  * ===================================================================
  * 08. common styles (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .white-section {
 	background: #fff;
@@ -1041,7 +1040,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 600;
 	font-size: 3.6rem;
 	color: #313131;
@@ -1059,7 +1058,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /**
  * responsive:
  * common styles
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
 	.section-intro {
@@ -1085,11 +1084,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 09. header styles - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 header {
 	position: fixed;
@@ -1133,7 +1132,7 @@ header .logo a {
 
 /**
  * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .menu-toggle {
 	float: left;
@@ -1228,7 +1227,7 @@ header .logo a {
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 600;
 	font-size: 1.5rem;
 	position: absolute;
@@ -1272,7 +1271,7 @@ header .logo a {
 /**
  * responsive:
  * header styles
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
@@ -1296,14 +1295,14 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
- * 10. intro - (_layout.scss) 
+ * 10. intro - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #intro {
-	background: #151515 url(@intro-bg-img-url) no-repeat center bottom;
+	background: #151515 no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1322,7 +1321,7 @@ header .logo a {
 	width: 100%;
 	height: 100%;
 	background: #111111;
-	opacity: .85;
+	opacity: .65;
 }
 
 .intro-content {
@@ -1335,7 +1334,7 @@ header .logo a {
 }
 .intro-content h1 {
 	color: #FFFFFF;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 600;
 	font-size: 8.4rem;
 	line-height: 1.071;
@@ -1348,7 +1347,7 @@ header .logo a {
 }
 .intro-content h5 {
 	color: #cc005f;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1358,7 +1357,7 @@ header .logo a {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: 'Lora', serif;
+	font-family: serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -1397,16 +1396,16 @@ header .logo a {
 .intro-content .button:hover, .intro-content .button:focus {
 	border-color: #cc005f;
 }
-.intro-content .button::after {
-	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
-	font-size: 1.6rem;
-	line-height: inherit;
-	text-align: center;
-	position: relative;
-	left: 1.2rem;
-}
+//.intro-content .button::after {
+//	display: inline-block;
+//	content: "\f107";
+//	font-family: fontAwesome;
+//	font-size: 1.6rem;
+//	line-height: inherit;
+//	text-align: center;
+//	position: relative;
+//	left: 1.2rem;
+//}
 
 .intro-social {
 	display: block;
@@ -1433,7 +1432,7 @@ header .logo a {
 /**
  * responsive:
  * Intro
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
@@ -1494,11 +1493,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 11. about - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #about {
 	background: #FFFFFF;
@@ -1533,7 +1532,7 @@ header .logo a {
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.8rem;
 	text-transform: uppercase;
@@ -1548,7 +1547,7 @@ header .logo a {
 	margin-bottom: .6rem;
 }
 .about-content .info-list li strong {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	color: #313131;
 	text-transform: uppercase;
@@ -1558,7 +1557,7 @@ header .logo a {
 }
 .about-content .info-list li span {
 	display: block;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	color: #888888;
 	font-size: 1.5rem;
@@ -1581,7 +1580,7 @@ header .logo a {
 /**
  * responsive:
  * about
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	.intro-info {
@@ -1628,11 +1627,11 @@ header .logo a {
 	}
 }
 
-/** 
+/**
  * ===================================================================
  * 12. resume - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #resume {
 	padding-top: 12rem;
@@ -1697,7 +1696,7 @@ header .logo a {
 	margin-bottom: 0;
 }
 #resume .timeline-header p {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.6rem;
 	color: #888888;
@@ -1724,7 +1723,7 @@ header .logo a {
 /**
  * responsive:
  * resume
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#resume .timeline-header {
@@ -1798,11 +1797,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 13. portfolio - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #portfolio {
 	background: #FFFFFF;
@@ -1865,7 +1864,7 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.2rem;
 	letter-spacing: .1rem;
@@ -1886,7 +1885,7 @@ header .logo a {
 /**
  * responsive:
  * portfolio
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
@@ -1924,21 +1923,21 @@ header .logo a {
 	padding: 1.8rem 3.6rem 3rem;
 }
 .popup-modal .description-box h4 {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
 }
 .popup-modal .description-box p {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
 	margin-bottom: 12px;
 }
 .popup-modal .categories {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.1rem;
 	line-height: 1.8rem;
@@ -1954,7 +1953,7 @@ header .logo a {
 	background: #000000;
 }
 .popup-modal .link-box a {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.2rem;
 	line-height: 6rem;
@@ -1988,7 +1987,7 @@ header .logo a {
 
 /**
  * transition effect for modal popup - (_layout.scss)
- * ------------------------------------------------------------------ 
+ * ------------------------------------------------------------------
  */
 
 /* overlay at start */
@@ -2040,11 +2039,11 @@ header .logo a {
 	transform: translateY(-100%);
 }
 
-/** 
+/**
  * ===================================================================
  * 14. call-to-action section - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 
 #interests {
@@ -2079,7 +2078,7 @@ header .logo a {
 
 /**
  * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 .section-ads h2 {
 	position: relative;
@@ -2117,100 +2116,11 @@ header .logo a {
 	}
 }
 
-
-/** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#services {
-	background: #313131 url(@bg-img-url) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	color: white;
-	position: relative;
-}
-#services .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #151515;
-	opacity: .9;
-}
-
-#services .section-intro {
-	margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-	color: white;
-}
-#services .section-intro h5 {
-	color: #FF0077;
-}
-#services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-content {
-	max-width: 1200px;
-}
-.services-list {
-	margin-top: 1.2rem;
-	text-align: center;
-}
-.services-list .service {
-	margin-bottom: 1.2rem;
-	padding: 0 30px;
-}
-.services-list .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.services-list .icon i {
-	font-size: 5.4rem;
-	color: #FF0077;
-}
-.services-list h3 {
-	color: #FFFFFF;
-}
-.services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
-}
-
-/* pagination */
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
-}
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
-}
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
-}
-.owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
-}
-
-
-/** 
+/**
  * ===================================================================
  * 16. stats - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #stats {
 	background: #990047;
@@ -2229,7 +2139,7 @@ header .logo a {
 	border: none;
 }
 #stats .icon-part i {
-	font-size: 4.8rem;
+	font-size: 4.4rem;
 	color: #000000;
 }
 #stats .stat-count {
@@ -2237,7 +2147,7 @@ header .logo a {
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 600;
 	color: white;
 }
@@ -2274,11 +2184,11 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 17. contact - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #contact {
 	background: #151515;
@@ -2331,7 +2241,7 @@ header .logo a {
 	clear: both;
 }
 #contact form .form-field label {
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	font-size: 1.1rem;
 	line-height: 2.4rem;
@@ -2429,7 +2339,7 @@ header .logo a {
 }
 #submit-loader .text-loader {
 	display: none;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 700;
 	color: #FFFFFF;
 	letter-spacing: .3rem;
@@ -2443,7 +2353,7 @@ header .logo a {
 }
 .contact-info {
 	margin: 4.8rem auto 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 	font-size: 1.5rem;
 	text-align: center;
@@ -2464,7 +2374,7 @@ header .logo a {
 
 /**
  * loader animation - (_layout.scss)
- * --------------------------------------------------------------- 
+ * ---------------------------------------------------------------
  */
 .s-loader {
 	margin: 1.2rem auto 3rem;
@@ -2518,16 +2428,16 @@ header .logo a {
 }
 
 
-/** 
+/**
  * ===================================================================
  * 18. footer - (_layout.scss)
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 400;
 }
 footer a, footer a:visited {
@@ -2596,14 +2506,14 @@ footer .copyright span:last-child::after {
 
 /**
  * go to top - (_layout.scss)
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  */
 #go-top {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	z-index: 600;
-	display: none;
+	display: block;
 }
 #go-top a {
 	text-decoration: none;
@@ -2630,5 +2540,19 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
-
+.m-fadeOut {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.m-fadeOut-slow {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 500ms, opacity 500ms;
+}
+.m-fadeIn {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 500ms;
+}
 /*# sourceMappingURL=main.css.map */
