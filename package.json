@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/TimmersThomas/jsonresume-theme-kards",
   "scripts": {
-    "resume:serve": "resume serve --theme .",
+    "resume:serve": "resume serve --resume example-resume.json --theme . ",
     "release:prepare": "git checkout master && git pull && npm version patch -m \"Release: %s\""
   },
   "dependencies": {

@@ -6,9 +6,9 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
-    <meta name="description" content="{#resume.basics}}I'm {{name}} | {{label}}{{/resume.basics}}">
-    <meta name="author" content="{#resume.basics}}{{name}}{{/resume.basics}}">
+    <title>{{resume.basics.name}}</title>
+    <meta name="description" content="I'm {{resume.basics.name}} | {{resume.basics.label}}">
+    <meta name="author" content="{{resume.basics.name}}">
     <meta name="generator" content="https://www.npmjs.com/package/{{meta.packageName}}/v/{{meta.version}}" />
 
     <!-- CSS
@@ -26,10 +26,10 @@
 
 <body id="top">
 
-    {{#resume.basics}}
-    <!-- intro section
-  ================================================== -->
+<!-- intro section
+================================================== -->
     <section id="intro">
+        {{#resume.basics}}
 
         <div class="intro-overlay"></div>
 
@@ -59,9 +59,9 @@
             </li>
             {{/each}}
         </ul> <!-- /intro-social -->
+        {{/resume.basics}}
 
     </section> <!-- /intro -->
-    {{/resume.basics}}
 
 
 
