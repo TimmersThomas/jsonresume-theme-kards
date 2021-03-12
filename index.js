@@ -119,7 +119,6 @@ function fixWork(work) {
 }
 
 const render = async (resume) => {
-	console.log('Hierrrr');
 	fixResume(resume);
 
 	const lessFile = fs.readFileSync(__dirname + "/Kards10/less/styles.less", "utf-8");
