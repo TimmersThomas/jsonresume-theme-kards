@@ -17,16 +17,16 @@
     "release:prepare": "git checkout master && git pull && npm version patch -m \"Release: %s\""
   },
   "dependencies": {
-    "handlebars": "^4.7.7",
     "handlebars-utils": "^1.0.6",
+    "handlebars": "^4.7.7",
     "html-minifier": "^4.0.0",
+    "less": "^4.1.1",
     "marked": "^2.0.1",
     "moment": "^2.29.1",
     "purify-css": "^1.2.5",
     "resume-cli": "3.0.0"
   },
   "devDependencies": {
-    "less": "^4.1.1"
   },
   "engineStrict": true,
   "engines": {
